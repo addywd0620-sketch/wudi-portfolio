@@ -1,32 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        h1 { color: #333; }
-        p { color: #666; line-height: 1.6; }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>吴迪｜文字与内容策划作品集</title>
+  <meta name="description" content="吴迪的内容策划、品牌文案、剧本创作与文化评论作品集。">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%237e2f2a'/%3E%3Cpath d='M18 17h28v5H18zm5 10h18v20H23z' fill='%23f4efe4'/%3E%3Cpath d='M28 31h8v12h-8z' fill='%237e2f2a'/%3E%3C/svg%3E">
+  <style>
+    :root{--paper:#f4f0e7;--paper2:#ebe4d7;--ink:#252823;--muted:#6d7067;--red:#8a3731;--green:#405b50;--line:rgba(45,51,44,.18);--serif:"Songti SC","STSong","Noto Serif CJK SC",serif;--sans:"PingFang SC","Microsoft YaHei",sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.8;background-image:radial-gradient(rgba(65,67,57,.06) .6px,transparent .7px);background-size:6px 6px}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1180px,calc(100% - 40px));margin:auto}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:relative;z-index:5}.mark{font:700 22px var(--serif);letter-spacing:.22em}.mark i{display:inline-grid;place-items:center;width:29px;height:29px;background:var(--red);color:#fff;font-style:normal;font-size:14px;margin-right:10px}.links{display:flex;gap:28px;color:var(--muted);font-size:14px}.links a:hover{color:var(--red)}
+    .hero{padding:70px 0 76px;display:grid;grid-template-columns:.78fr 1.22fr;gap:72px;align-items:start;position:relative}.eyebrow{color:var(--red);font-size:13px;letter-spacing:.28em}.identity h1{font:500 clamp(58px,8vw,96px)/1 var(--serif);letter-spacing:.08em;margin:20px 0}.role{font:20px/1.8 var(--serif);color:var(--green);margin:0}.intro{font-size:17px;color:#4d514a;max-width:620px;margin:24px 0}.hero-edu{border-top:1px solid var(--line);padding:20px 0}.hero-edu h2{font:500 20px/1.5 var(--serif);margin:0}.hero-edu p{color:var(--muted);margin:5px 0;font-size:14px}.contact{display:flex;flex-wrap:wrap;gap:10px 25px;margin-top:23px;color:var(--red)}.brush{height:1px;background:linear-gradient(90deg,transparent,var(--green),transparent);opacity:.45}
+    section{padding:100px 0}.section-head{display:grid;grid-template-columns:140px 1fr;gap:34px;margin-bottom:48px}.num{color:var(--red);font-family:var(--serif);letter-spacing:.12em}.section-head h2{font:500 clamp(34px,4vw,54px)/1.2 var(--serif);margin:0 0 12px}.section-head p{color:var(--muted);margin:0;max-width:650px}.projects{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.card{border:1px solid var(--line);background:rgba(255,255,255,.25);padding:34px;min-height:330px;display:flex;flex-direction:column;transition:.35s ease;position:relative;overflow:hidden}.card:hover{transform:translateY(-5px);background:rgba(255,255,255,.48);box-shadow:0 18px 50px rgba(49,47,39,.08)}.card.large{grid-column:span 7}.card.small{grid-column:span 5}.tag{color:var(--red);font-size:13px;letter-spacing:.12em}.card h3{font:500 30px/1.35 var(--serif);margin:20px 0 12px}.card p{color:var(--muted);margin:0}.card-meta{margin-top:auto;padding-top:28px;display:flex;justify-content:space-between;gap:12px;font-size:13px;color:var(--muted)}.open{border:0;background:none;color:var(--green);cursor:pointer;padding:0;border-bottom:1px solid currentColor}.open:hover{color:var(--red)}
+    .writing{background:var(--green);color:#f4f0e7}.writing .section-head p,.writing .num{color:#cdd3cb}.essay-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}.essay{border:1px solid rgba(255,255,255,.22);padding:32px;min-height:340px;display:flex;flex-direction:column}.essay .tag{color:#e2b6a8}.essay h3{font:400 28px/1.45 var(--serif);margin:18px 0}.essay p{color:#d7ddd5}.essay .open{color:#f4f0e7;margin-top:auto;align-self:flex-start}.text-preview{margin:22px 0 24px;padding:20px 0;border-top:1px solid rgba(255,255,255,.2);border-bottom:1px solid rgba(255,255,255,.2);font:16px/1.9 var(--serif);color:#eef0e9}
+    .closing{border-top:1px solid var(--line);text-align:center;padding:105px 0}.closing blockquote{font:400 clamp(26px,4vw,44px)/1.7 var(--serif);margin:0 auto 28px;max-width:820px}.closing p{color:var(--muted)}.closing .contact{justify-content:center}.closing-seal{display:inline-grid;place-items:center;background:var(--red);color:#fff;width:44px;height:44px;font-family:var(--serif);margin-bottom:26px}footer{border-top:1px solid var(--line);padding:28px 0 42px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between}
+    dialog{width:min(820px,calc(100% - 28px));max-height:88vh;border:0;padding:0;background:var(--paper);color:var(--ink);box-shadow:0 30px 90px rgba(19,20,17,.28)}dialog::backdrop{background:rgba(28,30,26,.66);backdrop-filter:blur(3px)}.modal{padding:46px}.modal-head{display:flex;justify-content:space-between;gap:20px;align-items:start;border-bottom:1px solid var(--line);padding-bottom:24px}.modal h2{font:500 36px var(--serif);margin:0}.close{border:1px solid var(--line);background:transparent;width:38px;height:38px;cursor:pointer;font-size:22px}.modal article{padding-top:22px}.modal article p{margin:0 0 1.15em}.modal article h3{font:500 21px var(--serif);color:var(--green);margin:30px 0 10px}.modal .quote{font:19px/2 var(--serif);color:#3e4d45;border-left:2px solid var(--red);padding-left:24px}.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}.fact{background:var(--paper2);padding:15px}.fact small{display:block;color:var(--muted)}
+    .reveal{opacity:0;transform:translateY(22px);transition:.7s ease}.reveal.in{opacity:1;transform:none}
+    @media(max-width:820px){.links{display:none}.hero{grid-template-columns:1fr;gap:38px;padding-top:48px}.section-head{grid-template-columns:1fr;gap:8px}.card.large,.card.small{grid-column:span 12}.essay-grid{grid-template-columns:1fr}.essay{min-height:300px}.facts{grid-template-columns:1fr}.modal{padding:28px 22px}section{padding:76px 0}footer{display:block}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.card{transition:none}}
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hello! I am a passionate developer. This is my portfolio page.</p>
-    </div>
+  <header class="wrap nav"><a class="mark" href="#top"><i>吴</i>文字作品集</a><nav class="links"><a href="#top">关于我</a><a href="#projects">策划与剧本</a><a href="#writing">文字切片</a><a href="#contact">联系</a></nav></header>
+  <main id="top">
+    <section class="wrap hero"><div class="identity"><div class="eyebrow">CONTENT · COPYWRITING · NARRATIVE</div><h1>吴迪</h1><p class="role">内容策划 · 品牌文案 · 游戏文案<br>剧本创作 · 文化评论</p><p class="intro">关注文化、影像与人的行为，擅长把观察与资料整理为清晰的内容结构、人物叙事和可执行的传播方案。</p><div class="contact"><a href="tel:13737155008">137 3715 5008</a><a href="mailto:addywd@126.com">addywd@126.com</a></div></div><div><div class="hero-edu"><h2>格拉斯哥大学｜硕士 · 创意产业与文化政策</h2><p>2025.09–2027.01（预计）</p><p>Digital Marketing Strategy、Project Management；研究关注文化产业、平台策略与用户行为。</p></div><div class="hero-edu"><h2>天津师范大学｜本科 · 广播电视编导｜应用心理学</h2><p>2019.09–2023.06</p><p>学习影视编导、剧本创作与节目策划，熟悉影视生产流程与镜头语言；兼修心理学，关注受众心理。</p></div></div></section>
+    <div class="brush"></div>
+    <section class="wrap reveal" id="projects"><div class="section-head"><div class="num">壹 / SELECTED</div><div><h2>策划与叙事</h2><p>从账号定位、用户洞察到人物、场景与视听语言：不同媒介背后，是同一种把复杂内容变得清楚、可感、可执行的能力。</p></div></div>
+      <div class="projects">
+        <article class="card large"><div class="tag">内容策划 · 概念方案</div><h3>垃圾筐电影院</h3><p>面向年轻电影爱好者的知识解读类短视频账号。以轻松、通俗的叙述，把镜头语言、电影意象和片场幕后转化为可消费、可持续的栏目内容。</p><div class="card-meta"><span>定位 / 受众 / 竞品 / 栏目机制</span><button class="open" data-modal="cinema">阅读案例</button></div></article>
+        <article class="card small"><div class="tag">产品策划 · 用户洞察</div><h3>宝宝巴士</h3><p>围绕亲子出行场景建立服务机制、安全体系、用户端功能与推广路径，呈现从需求识别到运营落地的完整思考。</p><div class="card-meta"><span>策划书 · 26页</span><button class="open" data-modal="bus">查看摘要</button></div></article>
+        <article class="card small"><div class="tag">纪录片策划 · 解说词</div><h3>三江侗婚</h3><p>以迎亲与回门两日仪式为线索，记录三江侗族婚嫁习俗；将文化资料转化为镜头、声音、节奏与现场执行方案。</p><div class="card-meta"><span>20分钟风俗纪录片</span><button class="open" data-modal="sanjiang">阅读节选</button></div></article>
+        <article class="card large"><div class="tag">长篇剧本 · 类型叙事</div><h3>落北少年探</h3><p>年代探案题材长篇剧本，以人物关系、线索推进和场次节奏搭建长篇叙事。</p><div class="card-meta"><span>长篇剧本</span><button class="open" data-modal="luobei">阅读选段</button></div></article>
+        <article class="card large"><div class="tag">电影评论 · 女性书写</div><h3>女性的在场与男性的缺席</h3><p>从《春潮》的母女镜像、空间切割、冷暖光线与水的意象出发，讨论女性如何成为叙事主体。</p><div class="card-meta"><span>电影评论</span><button class="open" data-modal="spring">阅读选段</button></div></article>
+        <article class="card small"><div class="tag">短片剧本 · 社会议题</div><h3>黎明将至</h3><p>以现实与心理空间交错的方式书写校园伤害与女性处境。</p><div class="card-meta"><span>短片剧本 · 14场</span><button class="open" data-modal="liming">阅读选段</button></div></article>
+      </div>
+    </section>
+    <section class="writing reveal" id="writing"><div class="wrap"><div class="section-head"><div class="num">贰 / WRITING</div><div><h2>文字切片</h2><p>私人经验并不是终点。经过选择与编辑，它可以成为城市观察、人物独白，也可以转译成品牌故事与游戏叙事。</p></div></div>
+      <div class="essay-grid">
+        <article class="essay"><div class="tag">异乡观察</div><h3>成为异乡人之后</h3><p>熟悉的身份感被重新打散，语言成为门槛，孤独也成为重新认识自己的方法。</p><div class="text-preview">异乡的月亮照见孤立，也照见一个尚未被证明的自己。</div><button class="open" data-modal="nobody">阅读节选</button></article>
+        <article class="essay"><div class="tag">旅行随笔</div><h3>无与伦比的夏日</h3><p>在尼斯的海、白昼与阳光里，身体焦虑获得短暂松绑；旅行也成为与自己重新相处的一种练习。</p><div class="text-preview">原来人度过一个夏天，也会和从前有一点不一样。</div><button class="open" data-modal="summer">阅读节选</button></article>
+        <article class="essay"><div class="tag">小说切片</div><h3>第一次爱的人</h3><p>苹果、风扇、白衬衣和没有落下的花瓣，构成一段始终隔着距离的青春记忆。</p><div class="text-preview">他站在身边，却好像始终隔着万水千山。</div><button class="open" data-modal="firstlove">阅读节选</button></article>
+      </div>
+    </div></section>
+    <section class="wrap closing reveal" id="contact"><div class="closing-seal">吴</div><blockquote>我相信好的内容既要有感受的温度，也要有抵达受众的方法。</blockquote><p>期待在内容策划、品牌文案与叙事创作中，继续寻找文字与人的连接。</p><div class="contact"><a href="tel:13737155008">137 3715 5008</a><a href="mailto:addywd@126.com">addywd@126.com</a></div></section>
+  </main>
+  <footer class="wrap"><span>© 2026 吴迪 · 文字与内容策划作品集</span><span>以文字保存感受，也解决问题。</span></footer>
+
+  <dialog id="reader"><div class="modal"><div class="modal-head"><div><div class="tag" id="mTag"></div><h2 id="mTitle"></h2></div><button class="close" aria-label="关闭">×</button></div><article id="mBody"></article></div></dialog>
+  <script>
+  const data={
+    cinema:{tag:'内容策划 · 精品选段',title:'垃圾筐电影院',body:`<div class="facts"><div class="fact"><small>平台</small>抖音</div><div class="fact"><small>单集时长</small>3–5分钟</div><div class="fact"><small>内容方向</small>电影知识解读</div></div><h3>账号定位</h3><p>账号面向非电影专业、但希望进一步读懂电影的年轻观众，以通俗方式解释镜头语言、意象含义和电影创作背后的故事。名称取自岩井俊二的《垃圾筐电影院》：熟悉电影文化的观众能从中获得会心一笑，陌生观众也会对“垃圾筐”与“电影院”的反差产生好奇。</p><h3>内容形式</h3><p>视频由电影片段、相关图片、字幕与旁白组成，创作者不出镜，以文案为内容核心。整体语气轻松，避免学院式讲解；单集控制在三至五分钟，用一个明确问题带领观众进入电影细节。</p><h3>栏目构想</h3><p>内容不局限于单一影片复述，而在同一“电影”主题下建立多个入口：一个镜头精读一部电影、同一场戏不同导演怎么拍、容易被忽略的电影意象，以及电影人与片场幕后。通过精读、比较、盘点与故事化讲述保持栏目变化。</p><h3>竞品观察</h3><p>对标账号一类依靠出镜形成个人风格，另一类以合成旁白和幕后冷知识形成稳定栏目。方案吸收二者的多角度选题与轻量表达，同时把重点放在“专业知识的大众翻译”，而非单纯剧情速看。</p>`},
+    bus:{tag:'产品策划 · 精品选段',title:'宝宝巴士',body:`<h3>需求切入</h3><p>项目从亲子出行场景出发：家长需要兼顾时间、安全和接送安排，儿童又无法独立完成复杂行程。方案将“安全感”视为产品的核心内容，而不只是附加功能。</p><h3>服务结构</h3><p>用户端围绕预约、路线、实时位置与紧急联系建立完整流程；司机端承担订单、身份验证和行程记录。安全机制贯穿服务前、中、后，连接司机审核、车辆信息、过程追踪与异常响应。</p><h3>传播思路</h3><p>推广不只强调便利，而是围绕家长最关心的可信度展开。前期通过目标家庭触达和体验反馈建立认知，中期结合真实使用场景说明服务价值，再以用户口碑和标准化运营沉淀信任。</p><h3>项目价值</h3><p>这份策划将用户需求、产品功能、竞争分析、商业模式、推广预算与后期维护放在同一套逻辑中，展示从问题识别到落地执行的系统策划能力。</p>`},
+    sanjiang:{tag:'纪录片策划 · 精品选段',title:'三江侗婚',body:`<div class="facts"><div class="fact"><small>类型</small>风俗纪录片</div><div class="fact"><small>时长</small>20分钟</div><div class="fact"><small>结构</small>迎亲 / 回门</div></div><h3>内容结构</h3><p>影片以一对新人的婚礼为叙事中心。第一部分从梳妆、火把引路、红伞送亲写到婚宴散场；第二部分跟随回门队伍经过鼓楼、拦门对歌、宴席与踩歌堂，在两天的时间里呈现婚嫁仪式与村寨共同体。</p><h3>迎亲段落</h3><p class="quote">夜幕降临，接亲的路途仍在继续。引路人手持火把走在最前，火光照亮两位新人前行的道路。新人身后，是声势浩大的送亲队伍。寨子里的居民纷纷从家中出来观礼，整座村寨都被热闹与祝福填满。</p><h3>散场段落</h3><p class="quote">夜已三更，婚宴走到尾声。人们在寒暄中散去，地上仍留着欢喜过后的满地炮屑。新郎新娘结束了一天的劳碌，床头火红的“喜”字，成为这场盛大婚礼的见证。</p><h3>回门段落</h3><p>宴席散场，热闹却没有退场。寨老在鼓楼地坪起头，歌唱祖辈留下的故事；中青年女人接着唱起生活，姑娘们随后加入。镜头从跳舞的新娘身上缓缓拉远，持续两天的仪式就此落幕，而两个人的婚姻生活才刚刚开始。</p>`},
+    luobei:{tag:'长篇剧本 · 连续选段',title:'《落北少年探》开篇',body:`<h3>江陵城 · 集市 · 日</h3><p>江北带着江驷在书摊前买书。包子铺忽然传来“抓小偷”的喊声，他把刚买的《英雄榜》往江驷怀里一扔，拔腿追去。小偷打散街边竹篮钻进小巷，江北借围墙翻上屋顶，从另一侧落下，正好截住去路。</p><p>直到看清对方只是一个衣衫破旧的孩子，江北才愣住。他让小偷向老板道歉，又叫江驷补上包子钱，多买十个包子塞进孩子怀里：“下次不要再偷东西。要是再被我碰见，我就把你送到衙门。”孩子抱着包子连声道谢，边走边狼吞虎咽。</p><h3>江府 · 正厅外 · 日</h3><p>回府时，紧闭的房门里传出父亲的声音：“怀化将军张岳因通敌叛国，已被收押大理寺待审……这件事千万不能告诉江北。”江北贴在门上的动作停住，随后猛地推门闯入：“舅舅绝不可能通敌，一定是有人陷害他！”</p><p>父亲的斥责最终变成半月禁足。深夜，江北收好衣物与药瓶，轻手轻脚地推开房门，却发现江驷站在墙角的阴影里。江北问他究竟听谁的。江驷沉默片刻，抬起头：“少爷，我跟你。”</p><h3>乌篷船 · 日</h3><p>第二天，两个人已经坐上北行的乌篷船。江驷把干粮递过去，问他们究竟要去哪里。江北望着船外滔滔不绝的江水，只回答了三个字：“去京城。”一封密信、一起通敌案，也由此把少年带入更大的局中。</p>`},
+    spring:{tag:'电影评论 · 论述选段',title:'《春潮》：女性如何在场',body:`<h3>母女镜像</h3><p>祖孙三代的矛盾关系贯穿全片。郭建波因为对母亲的不满，想象出一个与母亲期待完全相反的“他者”，并按照这个镜像构建自我；但血缘与长期共处又让母亲的暴躁和压抑持续影响她。二人既相互对抗，也无法真正从彼此的生命中退出。</p><p>影片没有用简单的男女二元对立解释女性困境，而是把女性放进更复杂的代际关系。郭建波击打猥亵学生的男教师，不只来自对女性身份的共情，也让她在无意识中理解了母亲曾经承受的伤害。反抗与理解并存，人物因此不再只是某种观点的证明。</p><h3>空间与光线</h3><p>祖孙三人生活在同一屋檐下，镜头却经常用墙面的切割线把她们放在不同的画面空间，祖母与母亲尤其少有真正共享的空间。对峙时，母亲常处于暗面，祖母位于亮面，进攻与退让的关系由此在视觉上成立。</p><p>家庭空间多笼罩在冷白光下，室内显得压抑凝重；离开家后，酒店、街道和窗外路灯却偏向暖色。原本应当提供庇护的“家”成为最令人窒息的地方，冷暖交替也把母女关系中难以言说的紧张具体化。</p><h3>水的意象</h3><p>影片没有为冲突安排彻底解决。母亲昏迷后，郭建波终于说出积压多年的话，却只能面对窗户里自己的倒影。结尾的水流像一次不求结果的宣泄：春潮退去，矛盾并未消失，但土地仍然感受得到潮水留下的湿润。</p>`},
+    liming:{tag:'短片剧本 · 连续选段',title:'《黎明将至》结尾段落',body:`<h3>洗手间 · 夜 · 内</h3><p>明亮的暖橙色灯光照在谢予恩脸上，使伤痕更加清晰。她站在洗手台前，呆滞地看着镜子里的自己，手指缓缓触碰伤口。恐惧已经侵入日常，她分不清眼前究竟是现实，还是又一次无法醒来的梦。</p><p>她不断搓洗脸上与身上的伤痕，又把衣服扔进洗脸池，将水开到最大。忽然，一抹红色进入视线。她惊恐地跌坐在地，看见佟岳倒在浴池里，鲜血从手腕向外蔓延；自己的手上也沾满了血，握着一把水果刀。</p><h3>客厅 · 夜 · 内</h3><p>急促的手机铃声与水流声把她拉回现实。浴池里什么也没有，双手也是干净的。她回到客厅打开灯，母亲的话却从电话另一端传来：“你一个女孩子，也不希望别人知道这件事吧，忍一忍就过去了。”</p><p>电话再次响起，谢予恩挂断。迟疑片刻后，她打开拨号界面，输入“110”。警笛声逐渐靠近，敲门声第一次响起时，她仍站在门后；第二次，她终于把门打开。门外是两位女警察。身体慢慢放松下来，她靠在墙边，露出一个释然的笑。</p>`},
+    nobody:{tag:'异乡观察 · 编辑节选',title:'成为异乡人之后',body:`<p class="quote">出国以后，我开始接受自己从“somebody”到“nobody”的过程。熟悉的身份感被重新打散，语言变成一道门槛，走在陌生的街区里，被忽略逐渐成为日常。</p><p>外国的月亮或许真的更圆，但更多时候也更冷。它照见人的孤立，也照见一个尚未被证明的自己。后来我才明白，异乡生活需要的不只是机票和行李，还有心理韧性、语言能力，以及重新建立生活的勇气。</p><p>英国漫长的冬令时里几乎见不到太阳。还好我喜欢雨，喜欢夜晚，也喜欢看见自己在陌生的环境里，慢慢成为一个与过去不同的人。</p>`},
+    summer:{tag:'旅行随笔 · 内容说明',title:'无与伦比的夏日',body:`<p>文章从一次并不顺利的法国行程开始，却没有停留在旅行攻略。尼斯海岸、漫长白昼与下水游泳的决定，逐渐牵出成长过程中对身体的焦虑。</p><p class="quote">原来人度过一个夏天，也会和从前有一点不一样。</p><p>它适合作为生活方式品牌、旅行内容或女性成长议题的写作样本：情绪来自具体经验，也最终回到自我理解。</p>`},
+    firstlove:{tag:'短篇小说 · 节选',title:'第一次爱的人',body:`<p class="quote">在我的印象里，林是就算站在身边，也好像离得很远的人。</p><p>炎热的午后，头顶风扇吱吱作响。他坐在斜前方吃苹果，翘起的椅子腿摩擦地面，混合着风扇的声音，偷走了我全部的注意力。</p><p>很多年后再遇见，他已经摘掉那副没有度数的眼镜，也剪去了长发。告别的时候，他的肩膀上不再有花落。我们像在驿站交汇的列车，短暂停留，又带着彼此留下的记忆远去。</p>`}
+  };
+  const dlg=document.querySelector('#reader'),title=document.querySelector('#mTitle'),tag=document.querySelector('#mTag'),body=document.querySelector('#mBody');
+  document.querySelectorAll('[data-modal]').forEach(b=>b.addEventListener('click',()=>{const x=data[b.dataset.modal];tag.textContent=x.tag;title.textContent=x.title;body.innerHTML=x.body;dlg.showModal();}));
+  document.querySelector('.close').addEventListener('click',()=>dlg.close());dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close()});
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.08});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  </script>
 </body>
 </html>
